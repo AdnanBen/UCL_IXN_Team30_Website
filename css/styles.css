@@ -1538,6 +1538,54 @@ a:hover.back-to-top {
 	background-color: #f9fafc;
 }
 
+.ex-basic-2b {
+	padding-top: 4.75rem;
+	padding-bottom: 4rem;
+	background-color: #2f2c3d;
+}
+
+.ex-basic-2b h3 {
+	margin-bottom: 1rem;
+}
+
+.ex-basic-2b .text-container {
+	margin-bottom: 3.625rem;
+}
+
+.ex-basic-2b .text-container.last {
+	margin-bottom: 0;
+}
+
+.ex-basic-2b .list-unstyled .fas {
+	color: #00c9db;
+	font-size: 0.5rem;
+	line-height: 1.375rem;
+}
+
+.ex-basic-2b .list-unstyled .media-body {
+	margin-left: 0.625rem;
+}
+
+.ex-basic-2b .btn-outline-reg {
+	margin-top: 1.75rem;
+}
+
+.ex-basic-2b .image-container-large {
+	margin-bottom: 4rem;
+}
+
+.ex-basic-2b .image-container-large img {
+	border-radius: 0.25rem;
+}
+
+.ex-basic-2b .image-container-small img {
+	border-radius: 0.25rem;
+}
+
+.ex-basic-2b .text-container.dark-bg {
+	padding: 1.625rem 1.5rem 0.75rem 2rem;
+	background-color: #f9fafc;
+}
 
 /*****************************/
 /*     20. Media Queries     */
