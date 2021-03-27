@@ -127,15 +127,42 @@
 
 
     <!-- Project Background -->
-    <div id="testing-overview" class="ex-basic-1b">
+    <div id="testing-overview" class="ex-basic-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="text-container">
                         <h3>Testing Overview</h3>
                         <p style = "font-family:Open sans;font-size:16px;">
-                            Due to the nature of our
+                        We utilised several methods of testing to instil confidence in our software. Due to the Unity nature of our application, most of our testing was manual combining human effort with heuristics to draw conclusions.
+                        <br>
+                        <br>
                         </p>
+                        <h6>Our test types included:</h6>
+                        <br>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><p style = "font-family:Open sans;font-size:18px;">Compatibility testing</p></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><p style = "font-family:Open sans;font-size:18px;">Responsive design testing</p></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><p style = "font-family:Open sans;font-size:18px;">Stress testing</p></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><p style = "font-family:Open sans;font-size:18px;">Alpha testing</p></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><p style = "font-family:Open sans;font-size:18px;">User Acceptance Testing</p></div>
+                            </li>
+
+                        </ul>
                     </div> <!-- end of text-container-->
                 </div>
             </div>
@@ -143,18 +170,32 @@
     </div>
 
     <!-- Client Introduction -->
-    <div id="project-background" class="ex-basic-1">
+    <div id="project-background" class="ex-basic-2b">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="text-container">
-                        <h3>Client Introduction</h3>
+                        <h3>Compatibility testing</h3>
                         <p style = "font-family:Open sans;font-size:16px;">
-                           <b>John McNamara</b> is a Master Inventor at IBM, Honorary Professor, and currently leads IBM UK University Programs.
-                            <br>
-                           <b>Dean Mohamedally</b> is a Principal Teaching Fellow at UCL and is the module lead for Systems Engineering.
+                            Our aims with compatibility testing was to realise what sorts of machines our software would work on.
 
-                        </p>
+Our measures of performance was FPS for the Unity desktop application and noticeable lag for our automatic background removal.
+<br><br>
+
+In our testing we utilised 4 different machines (A to E) ranging from high end to very low end. The specifications of each machine can be found in here in our appendix. 
+<br><br>
+In general:
+<br><br>
+Machine A: High end<br>
+Machine B: Mid/high end<br>
+Machine C: Mid/low end<br>
+Machine D: Low end<br>
+Machine E: Very low end<br><br>
+
+Our results showed that all machines (A to E) showed good performance achieving 30+ FPS in our Unity application.<br><br>
+
+For background removal our results were more varied. Machines (A to C) performance well however machine D showed poor background removal. Machine E failed completely with no background removal and a frozen website.
+</p>
                     </div> <!-- end of text-container-->
                 </div>
             </div>
@@ -163,50 +204,20 @@
 
 
     <!-- Specific goals -->
-    <div id="project-background" class="ex-basic-1b">
+    <div id="project-background" class="ex-basic-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="text-container">
-                        <h3>Project goals</h3>
+                        <h3>Reponsive design</h3>
                         <p style = "font-family:Open sans;font-size:16px;">
-                            Our main goal for this project was to create a desktop app that aims to make video calls more stimulating by giving them a more personal aspect. We wanted to produce a piece of conferencing software that could challenge the negative stereotype around online communication. 
-                        </p>
-
-                        <h5>Specific goals: </h5>
-
-                        <p style = "font-family:Open sans;font-size:16px;">
-                        - A simple UI to guide someone through the choosing process of one of our various environments. 
-                        <br>
-                        - A configuration mechanism so users can configure their chosen scene with objects and different camera angles.
-                        <br>
-                        - A saving mechanism so configurations can be stored and accessed at any time. 
-                        <br>
-                        - Realistic environments in regards to lighting and textures.
-                        <br>
-                        - The ability to use a green screen or to use automatic background removal.
-                        </p>
-
-                    </div> <!-- end of text-container-->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="project-background" class="ex-basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="text-container">
-                        <h3>Client requirements:</h3>
-                        <p style = "font-family:Open sans;font-size:16px;">
-                            Our main goal for this project was to create a desktop app that aims to make video calls more stimulating by giving them a more personal aspect. We wanted to produce a piece of conferencing software that could challenge the negative stereotype around online communication. 
-                        </p>
-
-                        <h5>Specific goals: </h5>
-
-                        <p style = "font-family:Open sans;font-size:16px;">
-                            In order to understand exactly what our clients expected from our finished project, we scheduled multiple meetings with both of them before making a start. We recorded everything regarding project requirements, and when there was a conflict between expectations we made sure to clear these up with both clients to ensure our team knew exactly what our deliverables were. We continuously kept close contact with both clients throughout the entire project to be sure we were producing something that was up to their standards.
+                            Our responsive design testing aimed to determine whether our UI would scale appropriately to different viewing configurations.
+<br><br>
+Our testing method for Unity was to launch the program with different resolutions and test whether all functionality was still working.
+<br><br>
+Initially we found that, although accounted for, our UI resolution scaling in Unity did not function correctly. However upon review and further development we corrected this and have confidence that all resolutions above 1080p will function completely correctly.
+<br><br>
+Our testing method for our website was to adjust window size and confirm that the text and video grids will adjust appropriately to ensure they are still in view and functional. Our system passed this test.
 
                         </p>
 
@@ -216,6 +227,102 @@
         </div>
     </div>
 
+    <div id="project-background" class="ex-basic-2b">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="text-container">
+                        <h3>Stress testing</h3>
+                        <p style = "font-family:Open sans;font-size:16px;">
+                            Stress testing our web app was quite tricky due to the nature of the system requiring genuine users from different networks. Due to the peer to peer nature of the service, connection between users would continue to function in the event of a server outage. 
+<br><br>
+                            Our testing method was to limit our connection 20 megabytes per second up and down. From here we would start a video session and invite peers and view when “noticeable lag” would appear. 
+                            <br><br>                           
+                            Our testing confirmed 5 peers would work stably on a standard 20/20 connection.
+                            
+                        
+                        </p>
+
+                      
+
+                    </div> <!-- end of text-container-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project-background" class="ex-basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="text-container">
+                        <h3>Alpha testing</h3>
+                        <p style = "font-family:Open sans;font-size:16px;">
+                            Considering out project was heavily UI orientated, alpha testing formed the bulk of our testing. Although we conducted alpha testing throughout our project, as we roughly tested each feature after implementation we decided to conduct a more formal alpha testing of key risk areas when near project completition.
+                            <br><br>
+                            Our testing method hence consisted of identifying key risk sand conducting neccesary simulations to find and patch potential bugs.
+                            <br><br>                           
+                            The key risks we tested and actions we took after investigation are below:
+                            <br> <br> 
+                            <b>- Being able to escape the designated area of each scene</b>
+                            <br> <br> 
+                            We found if speed is sufficinetly increased, penetration of walls is still possible. To minimise this we increased the radius of our object detection algorithm to increase the liklihood an object will be detected before penetration.
+                            Additionally some overlooked objects were missing mesh colliders which we added.
+                            <br> <br> 
+                            <b>- Improper functioning of save/load</b>
+                            <br> <br> 
+                            Our save/load fortunately functioned properly.
+                            <br> <br> 
+                            <b>- Improper functioning of buttons/ui when subject to unnatural behaviour (spam)</b>
+                            <br> <br> 
+                            We identified that in the scene selection screen, spamming the scene names could cause the image preview to stop functioning. We also found after accessing the drop down menu
+                            by pressing the cog once, it no longer highlights on cover. We are currently looking into these bugs however due to their rarity and low impact they are not a priortiy.
+                            <br> <br> 
+                            <b>- Failure in establishing peer to peer connection on video site</b>
+                            <br> <br> 
+                            We found that in the case that a peer to peer connection request is missed by a client, the connection is never established. We corrected this by adding a retry connection function. 
+                            We also found that in some cases, even when a failed connection is reattempted, connection is never established. We suspect a bug in the peerjs library and will be making the neccesary github issue. 
+                            To counter this issue we added a function to identify when it takes place, warn the user and automatically refresh the web page creating a new peerid for that user fixing the issue.
+                            <br> <br> 
+                            <b>- Memory leaks</b>
+                            <br> <br> 
+                            Fortunately, we were able to fix a significant issue when investigation this risk. We found that the relay server had been configured to continually send the bodypix model to a user, hence causing resources to continually build up and eventually crash the site for that user. We corrected this by restructuring the algorithm so that the model is only sent once.
+
+                            
+                        
+                        </p>
+
+                      
+
+                    </div> <!-- end of text-container-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project-background" class="ex-basic-2b">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="text-container">
+                        <h3>User acceptance testing</h3>
+                        <p style = "font-family:Open sans;font-size:16px;">
+                            Although minimal User acceptance testing by real users took place, we found the practice very valuable in the issues it corrected.
+                            <br><br>
+                            Testers:
+                            <br><br>                           
+                            Our testing confirmed 5 peers would work stably on a standard 20/20 connection.
+                            
+                        
+                        </p>
+
+                      
+
+                    </div> <!-- end of text-container-->
+                </div>
+            </div>
+        </div>
+    </div>
     
     
     <!-- Footer -->
