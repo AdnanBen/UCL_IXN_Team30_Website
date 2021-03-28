@@ -256,7 +256,7 @@
                     <div class="text-container">
                         <h1>System Design</h1>
                         <br><br>
-                        <h2>System Architecture Diagram</h2>
+                        <h2>System Architecture Diagrams</h2>
                     </div> <!-- end of text-container-->
                     <img class="mx-auto d-block" src="images/ArchitectureDiagram.png" style="width:1000px;height:450px;">
                     <div class="text-container">
@@ -268,6 +268,17 @@
                             add. The host gets OBS to capture the unity scene they have chosen and also the video streaming website. They crop and overlay 
                             the people in the video streaming web page using OBS and finally they choose OBS as their virtual camera in another video 
                             conferencing software (e.g. Microsoft Teams).
+                        </p>
+                        <img class="mx-auto d-block" src="images/ArchitectureDiagram2.png" style="width:1000px;height:450px;">
+                    <div class="text-container">
+                        <br>
+                        <p style = "font-family:Open sans;font-size:18px;">
+                            Our web app utilises P2P to share media between users.  <br><br>
+                            Its structure consist of 2 servers: <br><br>
+                            -a relay and UI server which shares information about present peers, UI and the bodypix model to all peers
+                            <br>
+                            -a P2P brokering server which allows peers to share media streams with each other using the peer information provided by the relay server. 
+
                         </p>
                     </div> <!-- end of text-container-->
                 </div>
