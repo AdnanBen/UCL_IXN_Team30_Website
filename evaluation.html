@@ -29,8 +29,6 @@
 	<link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 	
-	<!-- Favicon  -->
-    <link rel="icon" href="images/favicon.png">
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
@@ -199,10 +197,13 @@
                         <br>
                         <img class="mx-auto d-block" src="images/NonFunctionalMOSCOW.png" style="width:1000px;height:300px;">
                         <br>
-                        <h4>Overall functionality implemented:</h4>
-                        <h5>Overall key functionality: 100%</h5>
-                        <br>
-                        <h5>Overall optional functionality: 66.7%</h5>
+                        <h5>Overall functionality implemented:</h5>
+                        <p style = "font-family:Open sans;font-size:16px;">
+                            <b>Overall key functionality:</b> 100%
+                            <br>
+                            <br>
+                            <b>Overall optional functionality:</b> 66.7%
+                        </p>
                     </div>
                 </div>
             </div>
@@ -217,15 +218,15 @@
                         <h2>Known Bugs</h2>
                         <br>
                         <ul class="list-unstyled li-space-lg">
-                            <li class="media"><i class="fas fa-square"></i><div class="media-body"><p style = "font-family:Open sans;font-size:14px;">
+                            <li class="media"><i class="fas fa-square"></i><div class="media-body"><p style = "font-family:Open sans;font-size:16px;">
                                         Desktop capture may show a gray screen until a frame update happens on it e.g. user moves mouse onto that screen.
                             </p></div></li>
 
-                            <li class="media"><i class="fas fa-square"></i><div class="media-body"><p style = "font-family:Open sans;font-size:14px;">
+                            <li class="media"><i class="fas fa-square"></i><div class="media-body"><p style = "font-family:Open sans;font-size:16px;">
                                 Desktop configuration sub-menu may show an additional monitor is present when physically there is not. 
                             </p></div></li>
 
-                            <li class="media"><i class="fas fa-square"></i><div class="media-body"><p style = "font-family:Open sans;font-size:14px;">
+                            <li class="media"><i class="fas fa-square"></i><div class="media-body"><p style = "font-family:Open sans;font-size:16px;">
                                 If the user is using a laptop with both integrated graphics and a dedicated graphics processing unit, if the unity program 
                                 is run by windows using the dedicated GPU, then desktop capture will fail to work. To circumvent in such cases the user must 
                                 set in windows settings for the program to be run on integrated graphics. 
@@ -407,7 +408,7 @@
         </div>
     </div>
 
-    <div id="critical-analysis" class="ex-basic-1b">
+    <div id="critical-analysis" class="ex-basic-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
@@ -416,15 +417,15 @@
                         <br>
 
                         <h4>User interface / user experience </h4>
-                        <p>
+                        <p style = "font-family:Open sans;font-size:16px;">
                             The user interface is simple and intuitive, with guided setup through the stages of configuring its use. Saving and loading 
                             camera angles could be improved by adding some audio or visual feedback when an action is executed, as it is controlled by 
                             the user entirely via keyboard hotkeys. 
                         </p>
-                        <p>
+                        <p style = "font-family:Open sans;font-size:16px;">
                             The current solution requires 3 parts: web app, OBS, Unity program. While OBS was part of our project description and required
                              by the clients, we can evaluate the user experience of this system - For transition to a widely used program it might be 
-                             necessary to merge parts together, but will come at expense of flexibility. If OBS dependency is removed, capability of its
+                             necessary to merge parts together, but will come at the expense of flexibility. If OBS dependency is removed, capability of its
                               powerful features will be lost and will have to be made up for in the standalone application. Removing OBS will allow video 
                               conferencing to be built in the Unity program, e.g. using chromium embedded framework. Overall we feel that having flexibility
                                and strong feature capability is more important.
@@ -432,66 +433,67 @@
                         <br>
 
                         <h4>Functionality</h4>
-                        <p>
+                        <p style = "font-family:Open sans;font-size:16px;">
                             Our program fills a void in the virtual presentation software landscape, it can be a valuable tool for at-home presentation broadcasts. 
                         </p>
-                        <p>
+                        <p style = "font-family:Open sans;font-size:16px;">
                             With high quality, customizable virtual environments, our Unity program provides a good return on the time investment needed to 
                             setup and use the program, as opposed to just using a static image of an environment in OBS using its built-in desktop and window capture. 
                         </p>
-                        <p>
+                        <p style = "font-family:Open sans;font-size:16px;">
                             Desktop capture inside scenes was a strong feature of our program. It could be improved by allowing capture of individual 
                             windows instead of the entire desktop, we did not look into this due to time constraints.
                         </p>
-                        <p>
+                        <p style = "font-family:Open sans;font-size:16px;">
                             Algorithmic background removal in the web app is another highlight feature, we are very happy with how well it works, even
                             producing better results than some commercial software we looked at during research. 
                         </p>
                         <br>
 
                         <h4>Stability</h4>
-                        <p>
+                        <p style = "font-family:Open sans;font-size:16px;">
                             As our desktop program is built with Unity game engine, it has good stability. There were no crashes or stability issues
                              experienced during development and testing. 
                         </p>
-                        <p>
+                        <p style = "font-family:Open sans;font-size:16px;">
                             The web app has great stability as the video streaming is peer-to-peer, therefore it can withstand potential server issues. 
                         </p>
                         <br>
 
                         <h4>Efficiency</h4>
-                        <p>
-                            The Unity program and web app were tested to run well on a hardware of ranging power. A vSync frame limit was set on the Unity 
+                        <p style = "font-family:Open sans;font-size:16px;">
+                            The Unity program and web app were tested to run well on hardware of ranging power. A vSync frame limit was set on the Unity 
                             program to run at 30 frames per second, so that the user’s hardware is not being pushed to produce more frames per second than
                              is necessary in our use case. 
                         </p>
-                        <p>
+                        <p style = "font-family:Open sans;font-size:16px;">
                             Similarly, the web app’s algorithmic background removal’s green screen is limited to around 120ms per each frame (~8 fps) to 
                             reduce load on the user’s system.
                         </p>
                         <br>
 
                         <h4>Compatibility</h4>
-                        <p>
+                        <p style = "font-family:Open sans;font-size:16px;">
                             The web app was fully tested to work on Chrome, but it should be compatible on all modern browsers.
                         </p>
-                        <p> While our clients only expected our Unity program to work on Windows, given Unity’s cross compatibility it is possible for it 
+                        <p style = "font-family:Open sans;font-size:16px;"> While our clients only expected our Unity program to work on Windows, given Unity’s cross compatibility it is possible for it 
                             to be extended in the future to support Mac and Linux. We did not do this as there are some difficulties such as platform-specific
                              APIs for desktop capture. 
                         </p>
                         <br>
 
                         <h4>Maintainability</h4>
-                        <p>
+                        <p style = "font-family:Open sans;font-size:16px;">
                             The project is well documented in our READMEs, deployment and user manuals, code naming style and comments. The desktop program
                              is built using a Long Term Support (LTS) version of Unity game engine. 
                         </p>
                         <br>
 
                         <h4>Project management</h4>
-                        <p>
-                            With 3 members in the team, we were well coordinated with weekly meetings in which we planned our next steps. Work was 
-                            delegated based on strengths and previous experience. 
+                        <p style = "font-family:Open sans;font-size:16px;">
+                            With 3 members in the team, we were well coordinated with weekly meetings in which we planned our next steps. We also 
+                            stuck to our Gantt chart quite closely to insure we never fell behind with out deliverables. Work was 
+                            delegated based on strengths and previous experience.
                         </p>
                         <br>
 

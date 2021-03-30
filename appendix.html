@@ -30,7 +30,6 @@
     <link href="css/styles.css" rel="stylesheet">
 	
 	<!-- Favicon  -->
-    <link rel="icon" href="images/favicon.png">
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
@@ -229,22 +228,22 @@
                             Run VPE.exe executable to start the program<br>
 
                             <h6>Configuring a new scene</h6>
-                            1. Select “New Scene” in the main menu<br>
-                            2. Select a venue by clicking on it in the scrollable box<br>
-                            3. Press next arrow in bottom of screen to proceed with loading, otherwise back arrow to return to main menu<br>
-                            4. Select desired scene components by pressing on tick boxes. For desktop capture, click the dropdown box to select a desktop<br>
-                            5. Press next arrow to begin presentation mode<br>
+                            1. Select “New Scene” in the main menu.<br>
+                            2. Select a venue by clicking on it in the scrollable box.<br>
+                            3. Press next arrow in bottom of screen to proceed with loading, otherwise back arrow to return to main menu.<br>
+                            4. Select desired scene components by pressing on tick boxes. For desktop capture, click the dropdown box to select a desktop.<br>
+                            5. Press next arrow to begin presentation mode.<br>
                             <br>
 
                             <h6>Movement and camera controls</h6>
                             - W A S D keys control movement, Left Shift and Left Control control directly vertical movement. <br>
                             - Arrows keys are used to change the camera angle and rotation. <br>
-                            - Holding space temporarily increases sensitivity/speed of the controls<br>
+                            - Holding space temporarily increases sensitivity/speed of the controls.<br>
                             - You can save camera position and angle+rotation by holding any number on your keyboard, 0 to 9,
-                             for two seconds. To restore that save, simply press that key again<br>
+                             for two seconds. To restore that save, simply press that key again.<br>
                             <br>
                             The help menu shows movement and rotation controls, sensitivity adjustment, and saving + loading camera angles. 
-                            It can be accessed at any time during present mode via the dropdown menu<br>
+                            It can be accessed at any time during present mode via the dropdown menu.<br>
                             <br>
 
                             <h6>Using the dropdown menu</h6>
@@ -271,16 +270,16 @@
 
                             <h4>OBS and web app for multiple presenters </h4>
 
-                            0. (Prerequisite) Launch VPE, configure scene, move camera into desired position.<br>
+                            <b>0.</b> (Prerequisite) Launch VPE, configure scene, move camera into desired position.<br>
                             <br>
-                            <b>1. Web App instructions:</b><br>
+                            <b>1.</b> Web App instructions:<br>
                             a) Open the web app from the dropdown menu button, a new room will be automatically created. Ensure you have given the website
                              permission to access your camera.<br>
                             b) If you do not have a green screen, select the correct webcam and enable the “Remove Background” option. <br>
-                            c) Click “Join Call”<br>
+                            c) Click “Join Call”.<br>
                             d) Send URL to co-presenters, they must do steps b and c. <br>
                             <br>
-                            2. Create a new OBS scene in the bottom left panel by pressing “+” and select it<br>
+                            <b>2.</b> Create a new OBS scene in the bottom left panel by pressing “+” and select it.<br>
                             Add a new source, of type “Game Capture”, Set Mode to “Capture specific window”  and Window to “[VPE.exe]”<br>
                             <br>
                             <i>Manipulating sources: <br>
@@ -292,9 +291,9 @@
                                 Applying chroma key:<br>
                             Press “Filters”, add an Effect Filter of type “Chroma Key”<br></i>
                             <br>
-                            <b>4. To add yourself as a presenter, if you are using a greenscreen:</b> Add a new source, of type “Video Capture Device”. Manipulate 
+                            <b>4.</b> To add yourself as a presenter, if you are using a greenscreen: Add a new source, of type “Video Capture Device”. Manipulate 
                             as needed and add chroma key effect.<br>
-                            <b>5. To add co-presenters and/or self if using background removal:</b> Add a new source, type “Window”, for Window select your browser
+                            <b>5.</b> To add co-presenters and/or self if using background removal: Add a new source, type “Window”, for Window select your browser
                              window with the web app. Duplicate the source for each presenter, manipulate the source to crop onto the needed grid section
                               of each presenter. Add chroma key effect. <br>
                             <br>
