@@ -205,7 +205,7 @@
                     <div class="text-container">
                         <h4>VRChat</h4>
                         <p style = "font-family:Open sans;font-size:16px;">
-                           A multiplayer online game where users can explore virtual worlds together.
+                           A multiplayer online game where users can explore virtual worlds together. [1]
                             <br>
                             <br>
                             Key features:
@@ -225,7 +225,7 @@
                         <br>
                         <h4>Bigscreen</h4>
                         <p style = "font-family:Open sans;font-size:16px;">
-                            Bigscreen allows users to hang out and watch media together in a virtual environment. 
+                            Bigscreen allows users to hang out and watch media together in a virtual environment. [2]
                             <br>
                             <br>
                             Key features:
@@ -237,7 +237,7 @@
                             <br>
                             -	Streaming desktop into game
                             <br>
-                            -	Native video player for streaming media
+                            -	Native video player for streaming media [3]
 
                         </p>
                         <br>
@@ -261,7 +261,7 @@
                     <div class="text-container">
                         <h4>Microsoft Teams "Together Mode"</h4>
                         <p style = "font-family:Open sans;font-size:16px;">
-                            A mode in teams which places all meeting participants onto a 2D picture.
+                            A mode in teams which places all meeting participants onto a 2D picture. [4]
                             <br>
                             <br>
                             Key features:
@@ -325,7 +325,7 @@
                                     <p style = "font-family:Open sans;font-size:16px;">
                                         We initially considered sharing the videos of presenters with the main presenter using a python application. For this we looked into using sockets. After building a prototype however we concluded that requiring users of the software to port forward in order to allow the socket connection to be established as too high a cost.
 <br>
-                                        Our second approach involved Javascript and WebRTC. Although requiring a web server for authentication, this approach would not require any port forwarding on the user’s end. By default WebRTC allowed for one to one connections however using the PeerJS library we created an implementation that allows several users to connect together in a peer to peer nature. This meant that in addition to the web server not requiring much bandwidth, in the case of a server outage, connected clients would remain connected.
+                                        Our second approach involved Javascript and WebRTC [7]. Although requiring a web server for authentication, this approach would not require any port forwarding on the user’s end. By default WebRTC allowed for one to one connections however using the PeerJS [8] library we created an implementation that allows several users to connect together in a peer to peer nature. This meant that in addition to the web server not requiring much bandwidth, in the case of a server outage, connected clients would remain connected.
                                          </div> <!-- end of text-container-->
                             </div>
                         </div>
@@ -340,10 +340,42 @@
                                 <div class="text-container">
                                     <h3>Background removal</h3>
                                     <p style = "font-family:Open sans;font-size:16px;">
-                                        We initially looked into the “Real-Time High-Resolution Background Matting” paper as a possible solution to our automatic background removal. We created an initial python prototype which used this implantation. After further analysis we concluded that the requirement of a dedicated GPU as well as the poor frame rate in the prototype makes this solution inadequate.
+                                        We initially looked into the “Real-Time High-Resolution Background Matting” [9] paper as a possible solution to our automatic background removal. We created an initial python prototype which used this implantation. After further analysis we concluded that the requirement of a dedicated GPU as well as the poor frame rate in the prototype makes this solution inadequate.
 <br>
-                                        Our next approach was to use Google’s BodyPix library. We created a python application utilising the library and had promising performance results. As a result, we rewrote the implementation in JavaScript and incorporated it into our multiple presenters web app. 
+                                        Our next approach was to use Google’s BodyPix [10] library. We created a python application utilising the library and had promising performance results. As a result, we rewrote the implementation in JavaScript and incorporated it into our multiple presenters web app. 
                                            </div> <!-- end of text-container-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="project-background" class="ex-basic-2b">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <div class="text-container">
+                                    <h3>References</h3>
+                                    <p style = "font-family:Open sans;font-size:16px;">
+                                        [1] https://docs.vrchat.com/docs/ [Accessed January 20, 2021]
+                                        <br>
+                                        [2] https://www.bigscreenvr.com/about [Accessed January 20, 2021]
+                                        <br>
+                                        [3] https://store.steampowered.com/news/app/457550/view/2498884002717811426 [Accessed January 20, 2021]
+                                        <br>
+                                        [4] https://techcommunity.microsoft.com/t5/microsoft-teams/enabling-together-mode-in-ms-teams/m-p/1698285[Accessed January 20, 2021]
+                                        <br>
+                                        [5] // [Accessed January 20, 2021]
+                                        <br>
+                                        [6] // [Accessed January 26, 2021]
+                                        <br>
+                                        [7] https://webrtc.org/ [Accessed January 26, 2021]
+                                        <br>
+                                        [8] https://peerjs.com/ [Accessed February 3, 2021]
+                                        <br>
+                                        [9] https://grail.cs.washington.edu/projects/background-matting-v2/ [Accessed February 2, 2021]
+                                        <br>
+                                        [10] https://github.com/tensorflow/tfjs-models/tree/master/body-pix [Accessed February 10, 2021]
+                                    </div> <!-- end of text-container-->
                             </div>
                         </div>
                     </div>
