@@ -220,15 +220,15 @@
                             <br>
                             <b>Consistency:</b>
                             <br>
-                            We achieve consistency in our menu by having the standard title, back button and next button template for every page. We also achieve consistency 
-                            across all of our scenes by having the exact same drop down menu in all of them for additional functions. We also consistently use the same colour 
+                            We achieve consistency in our menu by having the standard title, back button and next button template for every page. Another way we achieve consistency 
+                            across all of our scenes is by having the exact same drop down menu in all of them for additional functions. We also consistently use the same colour 
                             scheme across our whole program.
                             <br>
                             <br>
                             <b>Constraints:</b>
                             <br>
                             An example of how we managed to satisfy the constraints principle in our design is by not allowing a user to move through walls or objects in our 
-                            scenes. Another example is that we also don’t allow people to choose multiple scenes on the selection screen by only allowing one scene toggle to 
+                            scenes. Another example is that we don’t allow people to choose multiple scenes on the selection screen by only allowing one scene toggle to 
                             be chosen at a time.
                         </p>
                     </div> <!-- end of text-container-->
@@ -253,7 +253,7 @@
                             For sketch 1.1 they felt there was too much happening with the image and block of text. They wanted a simpler approach to this screen.​
                             <br><br>
 
-                            For sketch 1.2 they believed it would be very difficult to find the exact scene they wanted with no filtering option, but they did like the more minimalist design.​
+                            For sketch 1.2 they believed it would be very difficult to find the exact scene they wanted if there was a large amount of environments available, as you can only see three at a time.​
                             <br><br>
 
                             For sketch 1.3 they didn't like the way the camera settings menu obscured the view of the scene they were dealing with. 
@@ -295,7 +295,7 @@
                         <h2>Interactive Wireframe</h2>
                         <br>
                         <p style = "font-family:Open sans;font-size:18px;">
-                            Below is an interactive wireframe we created using Balsamiq. The arrows show where you are brought when certain buttons are pressed.
+                            Below is an interactive wireframe we created using <a href="https://balsamiq.com/wireframes/?gclid=Cj0KCQjw9YWDBhDyARIsADt6sGZJ23eDRkOtwRYe3X1hA8lsVfqHqylOpHUuH65p5fqhtpmExeEe9iUaAl9-EALw_wcB">Balsamiq</a>. The arrows show where you are brought when certain buttons are pressed.
                         </p>
                     </div> <!-- end of text-container-->
                     <img class="mx-auto d-block" src="images/Wireframe.png" style="width:1000px;height:400px;">
@@ -320,20 +320,21 @@
                         <p style = "font-family:Open sans;font-size:18px;">
                             Essentially, the way our software works is as follows: <br>
                             The host presenter runs our Unity program and selects a scene. If they want to add more presenters to the scene they click 
-                            that option in the menu and this opens a video streaming website. The host simply sends that link to the people he wants to 
+                            that option in the menu and this opens a video streaming website. The host simply sends that link to the people they want to 
                             add. The host gets OBS to capture the unity scene they have chosen and also the video streaming website. They crop and overlay 
                             the people in the video streaming web page using OBS and finally they choose OBS as their virtual camera in another video 
                             conferencing software (e.g. Microsoft Teams).
                         </p>
-                        <img class="mx-auto d-block" src="images/ArchitectureDiagram2.png" style="width:1000px;height:450px;">
+                        <br>
+                        <img class="mx-auto d-block" src="images/ArchitectureDiagram2.png" style="width:900px;height:450px;">
                     <div class="text-container">
                         <br>
                         <p style = "font-family:Open sans;font-size:18px;">
                             Our web app utilises P2P to share media between users.  <br><br>
                             Its structure consist of 2 servers: <br><br>
-                            -a relay and UI server which shares information about present peers, UI and the bodypix model to all peers
+                            - A relay and UI server which shares information about present peers, UI and the bodypix model to all peers
                             <br>
-                            -a P2P brokering server which allows peers to share media streams with each other using the peer information provided by the relay server. 
+                            - A P2P brokering server which allows peers to share media streams with each other using the peer information provided by the relay server. 
 
                         </p>
                     </div> <!-- end of text-container-->
