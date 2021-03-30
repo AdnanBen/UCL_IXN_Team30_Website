@@ -276,9 +276,13 @@
                         <p style = "font-family:Open sans;font-size:16px;">
                             Due to the nature of our project, many of the tools and technologies were defined to us by the client. However particular areas such as our webapp and certain requested functionalities required much research and consideration.  </p>
                         <br><br>
-                        <h3>Udd</h3>
+                        <h3>Desktop Capture</h3>
                         <p style = "font-family:Open sans;font-size:16px;">
-                            Due to the nature of our project, many of the tools and technologies were defined to us by the client. However particular areas such as our webapp and certain requested functionalities required much research and consideration.  
+                            A crucial feature was capturing the user's desktop to render inside the 3D environments. 
+                            Initially we tried to use a .NET API - System.Drawing [5], but Unity did not support it. We looked at existing plugins
+                             and assets for Unity, most of which had compatibility issues during testing, but one library was found which 
+                             worked – uDesktopDuplication [6]. This allowed us to interface with DirectX to capture the user’s desktop and 
+                             render it as a texture in the scene. The library has an MIT licence which allowed us to use it. 
                         </p>
                         <br><br>
                         <h3>Multiple presenters</h3>
@@ -316,9 +320,9 @@
                             <br>
                             [4] https://techcommunity.microsoft.com/t5/microsoft-teams/enabling-together-mode-in-ms-teams/m-p/1698285 [Accessed January 20, 2021]
                             <br>
-                            [5] // [Accessed January 20, 2021]
+                            [5] https://docs.microsoft.com/en-us/dotnet/api/system.drawing?view=net-5.0 [Accessed January 20, 2021]
                             <br>
-                            [6] // [Accessed January 26, 2021]
+                            [6] https://github.com/hecomi/uDesktopDuplication [Accessed January 26, 2021]
                             <br>
                             [7] https://webrtc.org/ [Accessed January 26, 2021]
                             <br>
