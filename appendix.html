@@ -196,7 +196,15 @@
                             2. File > Build Settings > Build<br>
                             <br>
                             <h6>Web app deployment</h6>
-                            TODO<br>
+                            (The main web app is currently deployed to https://vpe-video-chat.herokuapp.com/, the peerjs server is currently set to https://vpe-peerjs-server.herokuapp.com/)<br><br>
+
+                            <b>If you would like to use your own web app and peerjs server: </b> <br><br>
+
+                            1. Set "host" of the myPeer object in public/script.js to a live PeerJS server. Remove the "host" attribute to use the default server provided by PeerJS.
+                            (PeerJS deployment information can be found at https://github.com/peers/peerjs-server)<br>
+                            2. Run "npm install" in the presenters-videos folder to install dependencies <br>
+                            3a. Remove the line "app.use(requireHTTPS);" in server.js and run "npm start" to run the node app locally<br>
+                            3b. Alternatively, deploy the node app following the deployment guide of your hosting provider<br>
                             <br>
                             <h6>Setting URL to self hosted web app:</h6>
                             1. Run the built application once and close<br>
