@@ -234,23 +234,23 @@
                         <p style = "font-family:Open sans;font-size:16px;">
                             Our aims with compatibility testing was to realise what sorts of machines our software would work on.
 
-Our measures of performance was FPS for the Unity desktop application and noticeable lag for our automatic background removal.
-<br><br>
+                            Our measures of performance was FPS for the Unity desktop application and noticeable lag for our automatic background removal.
+                            <br><br>
 
-In our testing we utilised 4 different machines (A to E) ranging from high end to very low end. 
-<br><br>
-In general:
-<br><br>
-Machine A: High end<br>
-Machine B: Mid/high end<br>
-Machine C: Mid/low end<br>
-Machine D: Low end<br>
-Machine E: Very low end<br><br>
+                            In our testing we utilised 4 different machines (A to E) ranging from high end to very low end. 
+                            <br><br>
+                            In general:
+                            <br><br>
+                            <b>Machine A:</b> High end<br>
+                            <b>Machine B:</b> Mid/high end<br>
+                            <b>Machine C:</b> Mid/low end<br>
+                            <b>Machine D:</b> Low end<br>
+                            <b>Machine E:</b> Very low end<br><br>
 
-Our results showed that all machines (A to E) showed good performance achieving 30+ FPS in our Unity application.<br><br>
+                            Our results showed that all machines (A to E) showed good performance achieving 30+ FPS in our Unity application.<br><br>
 
-For background removal our results were more varied. Machines (A to C) performance well however machine D showed poor background removal. Machine E failed completely with no background removal and a frozen website.
-</p>
+                            For background removal our results were more varied. Machines (A to C) performance well however machine D showed poor background removal. Machine E failed completely with no background removal and a frozen website.
+                            </p>
                     </div> <!-- end of text-container-->
                 </div>
             </div>
@@ -267,12 +267,12 @@ For background removal our results were more varied. Machines (A to C) performan
                         <h3>Reponsive Design</h3>
                         <p style = "font-family:Open sans;font-size:16px;">
                             Our responsive design testing aimed to determine whether our UI would scale appropriately to different viewing configurations.
-<br><br>
-Our testing method for Unity was to launch the program with different resolutions and test whether all functionality was still working.
-<br><br>
-Initially we found that, although accounted for, our UI resolution scaling in Unity did not function correctly. However upon review and further development we corrected this and have confidence that all resolutions above 1080p will function completely correctly.
-<br><br>
-Our testing method for our website was to adjust window size and confirm that the text and video grids will adjust appropriately to ensure they are still in view and functional. Our system passed this test.
+                            <br><br>
+                            Our testing method for Unity was to launch the program with different resolutions and test whether all functionality was still working.
+                            <br><br>
+                            Initially we found that, although accounted for, our UI resolution scaling in Unity did not function correctly. However upon review and further development we corrected this and have confidence that all resolutions above 1080p will function completely correctly.
+                            <br><br>
+                            Our testing method for our website was to adjust window size and confirm that the text and video grids will adjust appropriately to ensure they are still in view and functional. Our system passed this test.
 
                         </p>
 
@@ -290,16 +290,13 @@ Our testing method for our website was to adjust window size and confirm that th
                         <h3>Stress testing</h3>
                         <p style = "font-family:Open sans;font-size:16px;">
                             Stress testing our web app was quite tricky due to the nature of the system requiring genuine users from different networks. Due to the peer to peer nature of the service, connection between users would continue to function in the event of a server outage. 
-<br><br>
+                            <br><br>
                             Our testing method was to limit our connection 20 megabytes per second up and down. From here we would start a video session and invite peers and view when “noticeable lag” would appear. 
                             <br><br>                           
                             Our testing confirmed 5 peers would work stably on a standard 20/20 connection.
                             
                         
                         </p>
-
-                      
-
                     </div> <!-- end of text-container-->
                 </div>
             </div>
@@ -313,35 +310,35 @@ Our testing method for our website was to adjust window size and confirm that th
                     <div class="text-container">
                         <h3>Alpha Testing</h3>
                         <p style = "font-family:Open sans;font-size:16px;">
-                            Considering out project was heavily UI orientated, alpha testing formed the bulk of our testing. Although we conducted alpha testing throughout our project, as we roughly tested each feature after implementation we decided to conduct a more formal alpha testing of key risk areas when near project completition.
+                            Considering our project was heavily UI orientated, alpha testing formed the bulk of our testing. Although we conducted alpha testing throughout our project, as we roughly tested each feature after implementation we decided to conduct a more formal alpha testing of key risk areas when near project completition.
                             <br><br>
                             Our testing method hence consisted of identifying key risk sand conducting neccesary simulations to find and patch potential bugs.
                             <br><br>                           
                             The key risks we tested and actions we took after investigation are below:
-                            <br> <br> 
+                            <br><br> 
                             <b>- Being able to escape the designated area of each scene</b>
-                            <br> <br> 
-                            We found if speed is sufficinetly increased, penetration of walls is still possible. To minimise this we increased the radius of our object detection algorithm to increase the liklihood an object will be detected before penetration.
+                            <br> 
+                            We found if speed is sufficinetly increased, penetration of walls is still possible. To minimise this we increased the radius of our object detection algorithm to increase the likelihood an object will be detected before penetration.
                             Additionally some overlooked objects were missing mesh colliders which we added.
                             <br> <br> 
                             <b>- Improper functioning of save/load</b>
-                            <br> <br> 
+                            <br> 
                             Our save/load fortunately functioned properly.
                             <br> <br> 
                             <b>- Improper functioning of buttons/ui when subject to unnatural behaviour (spam)</b>
-                            <br> <br> 
-                            We identified that in the scene selection screen, spamming the scene names could cause the image preview to stop functioning. We also found after accessing the drop down menu
-                            by pressing the cog once, it no longer highlights on cover. We are currently looking into these bugs however due to their rarity and low impact they are not a priortiy.
+                            <br> 
+                            We identified that in the scene selection screen, spamming the scene names could cause the image preview to stop functioning. We partially fixed this bug so that it is much harder to reproduce. We also found after accessing the drop down menu
+                            by pressing the cog once, it no longer highlights on cover. We are currently looking into these bugs however due to their rarity and low impact they are not a priority.
                             <br> <br> 
                             <b>- Failure in establishing peer to peer connection on video site</b>
-                            <br> <br> 
+                            <br> 
                             We found that in the case that a peer to peer connection request is missed by a client, the connection is never established. We corrected this by adding a retry connection function. 
                             We also found that in some cases, even when a failed connection is reattempted, connection is never established. We suspect a bug in the peerjs library and will be making the neccesary github issue. 
                             To counter this issue we added a function to identify when it takes place, warn the user and automatically refresh the web page creating a new peerid for that user fixing the issue.
                             <br> <br> 
                             <b>- Memory leaks</b>
-                            <br> <br> 
-                            Fortunately, we were able to fix a significant issue when investigation this risk. We found that the relay server had been configured to continually send the bodypix model to a user, hence causing resources to continually build up and eventually crash the site for that user. We corrected this by restructuring the algorithm so that the model is only sent once.
+                            <br> 
+                            Fortunately, we were able to fix a significant issue when investigating this risk. We found that the relay server had been configured to continually send the bodypix model to a user, hence causing resources to continually build up and eventually crash the site for that user. We corrected this by restructuring the algorithm so that the model is only sent once.
 
                             
                         
@@ -363,17 +360,19 @@ Our testing method for our website was to adjust window size and confirm that th
                         <h3>Beta Testing</h3>
                         <p style = "font-family:Open sans;font-size:16px;">
                             Although minimal user acceptance testing by real users took place, we found the practice very valuable in the issues it corrected.
+                            <br>
                             <h4>Testers:</h4>   
                             <p style = "font-family:Open sans;font-size:16px;">   
                             Tester A - Secondary School Teacher  
                             <br>
-                            Tester B - University lecturer             
+                            Tester B - University lecturer 
+                            <br>            
                             <h4>Test cases and feedback:</h4>
                             <p style = "font-family:Open sans;font-size:16px;">  
                                 <ul class="list-unstyled li-space-lg">
                                     <li class="media">
                                         <i class="fas fa-square"></i>
-                                        <div class="media-body"><p style = "font-family:Open sans;font-size:18px;">From the main menu configure a scene to your liking</p></div>
+                                        <div class="media-body"><p style = "font-family:Open sans;font-size:16px;">From the main menu configure a scene to your liking</p></div>
                                 </ul> 
                                 <p style = "font-family:Open sans;font-size:16px;">  
                             Tester A - It was nice and easy, I liked the design
@@ -385,7 +384,7 @@ Our testing method for our website was to adjust window size and confirm that th
                             <ul class="list-unstyled li-space-lg">
                                 <li class="media">
                                     <i class="fas fa-square"></i>
-                                    <div class="media-body"><p style = "font-family:Open sans;font-size:18px;">Stream a scene to Microsoft Teams using OBS</p></div>
+                                    <div class="media-body"><p style = "font-family:Open sans;font-size:16px;">Stream a scene to Microsoft Teams using OBS</p></div>
                             </ul> 
                             <p style = "font-family:Open sans;font-size:16px;">  
                             Tester A - It was really tricky and took quite long

@@ -336,17 +336,17 @@ Optional scene components are ones that can be customised by the user. Our imple
                         <br>
                         <h3>Multiple presenters</h3>
                         <p style = "font-family:Open sans;font-size:16px;">
-                            Our multiple presenters feature is provided by our WebRTC based Express.js web app. The app works with different video call “rooms” which corresponds to the URL
+                            Our multiple presenters feature is provided by our WebRTC based Express.js web app. The app works with different video call “rooms” which corresponds to the URL.
 <br><br>
-                            Server side:
+                            <b>Server side:</b>
                             <br><br>
-                            On connection to the website, a uuid v4 is generated and this becomes the “roomid”. The url also redirects to this uuid. Socket.IO is then used to monitor all new connections 
+                            On connection to the website, a uuid v4 is generated and this becomes the “roomid”. The url also redirects to this uuid. Socket.IO is then used to monitor all new connections. 
                             <br>
                             Each user receives a peerid from the PeerJS server on connection to a call. This peerid is then distributed to all peers in the room using Socket.IO. 
                             <br>
                             The relay server also distributes the BodyPix ml model to all peers.
                             <br><br>
-                            Client side:
+                            <b>Client side:</b>
                             <br><br>
                             When the client joins a call a new peerjs peer object is created and assigned to them. This includes a peerid which is then shared with the relay server and broadcasted to all other peers in that room. 
                             <br>
